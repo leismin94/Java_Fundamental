@@ -7,7 +7,7 @@ public class LotteryDemo {
 		
 		// Math.random() -> 0보다 크거나 같고 1보다 작은 양수를 Double 값으로 반환한다.
 		
-		
+		for (int k = 0; k < 5; k++) { // 5번을 전체 문장 실행하고 55번째줄 문장 실행 하며 증감시킴
 		
 		int[] lotto = new int[6];
 		
@@ -19,19 +19,19 @@ public class LotteryDemo {
 				lotto[i] = temp;
 			}else {
 				// is는 임의의 값 temp와 이전 배열의 값을 비교했을 때 같으면 true 아니면 false
-				boolean is = false; 
+				boolean isExisted = false; 
 				// i==1 아래의 for loop 1번 반복
 				// i==2 아래의 for loop 2번 반복
 				// i==3 아래의 for loop 3번 반복
-				for(int j=0; j<i; j++) {
+				for(int j=0; j<i; j++) { // -> 이 for문은 lotto[j]와 temp 값이 같은지 아닌지 확인할겨 만든 것
 					if(lotto[j]==temp) {
 						//새로 생성한 temp와 이전 배열의 값을 비교해서 같은 값이 존재하면 
-						is = true;
+						isExisted = true;
 						break;
 					}
 				}
 				
-				if(!is) { // 존재하지 !(않으면)
+				if(!isExisted) { // 존재하지 !(않으면)
 					lotto[i] = temp; // 집어넣고
 				}else {
 					i--; // 이전위치로 변경하면 for문에서 i++로 증가하기에 원위치로 돌아가서 중복되는 값이 아닌 새로운 값으로 다시시도할 수 있음
@@ -50,7 +50,9 @@ public class LotteryDemo {
 			}
 		}
 		for (int i = 0; i < lotto.length; i++) {
-			System.out.print(lotto[i] + ",");
+			System.out.print(lotto[i] + "\t");
+		}
+		System.out.println(); // 한줄 띄기
 		}
 	}
 }
