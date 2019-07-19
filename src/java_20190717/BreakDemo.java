@@ -9,7 +9,7 @@ public class BreakDemo {
 				break test; // i가 6이면 test라는 반복문을 탈출한다 (반복문이 하나이면 의미가 없다)
 			sum += i;
 		}
-		System.out.printf("1부터 5까지의 합은 %d 입니다.", sum);
+		System.out.printf("1부터 5까지의 합은 %d 입니다.%n", sum);
 
 		// 이중 for문 탈출법
 
