@@ -14,7 +14,7 @@ public class CustomerDemo {
 		c1.balance = 71111111111.17;
 		c1.isReleased = false;
 
-		System.out.printf("%s,%d,%s,%s,%.2f,%s",
+		System.out.printf("%s,%d,%s,%s,%.2f,%s%n",
 				c1.name,c1.age,c1.email,c1.phone,c1.balance,c1.isReleased);
 		
 		Customer c2 = new Customer();
@@ -25,10 +25,12 @@ public class CustomerDemo {
 		c2.balance = 450_000_000_000.1;
 		c2.isReleased = true;
 		
+		System.out.printf("%s,%d,%s,%s,%.2f,%s%n",
+				c2.name,c2.age,c2.email,c2.phone,c2.balance,c2.isReleased);
 		Customer c3 = c2;
 		c3.age = 1000;
 		
-		System.out.printf("%s,%d,%s,%s,%.2f,%s",
+		System.out.printf("%s,%d,%s,%s,%.2f,%s%n",
 				c2.name,c2.age,c2.email,c2.phone,c2.balance,c2.isReleased);
 	}
 }
