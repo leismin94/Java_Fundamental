@@ -31,6 +31,5 @@ public class OverloadingDemo {
 		o1.print("test");
 		o1.print(23+24);
 		o1.print(43.256);
-		
 	}
 }

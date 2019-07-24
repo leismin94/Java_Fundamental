@@ -2,7 +2,9 @@ package java_20190722;
 
 public class MemberPayDemo {
 	public static void main(String[] args) {
+		
 		MemberPay m1 = new MemberPay();
+		
 		m1.setSeq(1);
 		m1.setGroup(1);
 		m1.setName("MBE");

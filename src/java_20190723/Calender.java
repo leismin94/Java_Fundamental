@@ -30,7 +30,7 @@ public class Calender {
 		return totalCount;
 	}
 
-	public int getLastDay(int year, int month) {
+	private int getLastDay(int year, int month) {
 		int[] monthArray = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
 		if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
@@ -38,7 +38,12 @@ public class Calender {
 		}
 
 		return monthArray[month - 1]; // 배열의 처음은 0 이니까 month -1 해줘야됨
-	}
+	}	
+	
+	// 위는 private 아래는 public인 이유
+	// 위의 private 식들은 내가 프린트 하기위해 쓰는 공식들을 만든 메소드이기 때문에 다른사람들에게 
+	// 알려줄 필요가 없다.
+	// 밑에는 CalenderDemo 에서 사용하는 프린트 식이기 때문에 public으로 해줘야함.
 
 	public void print(int year) {
 		for (int i = 1; i <= 12; i++) {
@@ -46,7 +51,7 @@ public class Calender {
 		}
 
 	}
-
+	
 	public void print2year(int year) { // 2년치 달력
 		for (int j = year; j <= year+1; j++) {
 			for (int i = 1; i <= 12; i++) {

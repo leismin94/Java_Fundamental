@@ -1,5 +1,7 @@
 package java_20190723;
 
+//?
+
 public class VarArgDemo {
 	//public VarArgDemo() {} 
 	public long sum(int... temp){  //더하거나 곱하는건 long이 좋음 // temp는 배열로 취급
