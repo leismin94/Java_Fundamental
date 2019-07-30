@@ -19,7 +19,7 @@ public class CalenderDemo {
 			String readLine = console(); // 커서가 깜빡임
 			if(readLine.contentEquals("exit")) break; // exit 를 누르면 break 
 			
-			String[] data = readLine.split(" "); // 공백으로 문자열을 쪼개겠다
+			String[] data = readLine.split(" "); // split -> 공백으로 문자열을 쪼개겠다
 			
 			int dataLength = data.length; // 변수처리 해주는게 좋음
 			if(dataLength == 1) {		
