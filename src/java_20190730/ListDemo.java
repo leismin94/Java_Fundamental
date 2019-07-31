@@ -34,7 +34,13 @@ public class ListDemo {
 		list.add(p2); // 할당
 		list.add(p3); // 할당
 		list.add(p4); // 할당
-	
+		
+		for(Product product : list) {  // product 정보 바꾸기 
+			if(product.number == 3) { // 비교대상이 primitive 이기때문에 == / 문자열 비교면 equals 쓰기
+				product.price = 3500;
+			}
+		}
+		
 		//list.remove(0); 삭제
 		/* 
 		for (int i = 0; i < list.size(); i++) {
@@ -49,9 +55,9 @@ public class ListDemo {
 		
 		// 배열에있는걸 꺼내서 집어넣음
 		// enhanced for loop 출력 가능(제너릭으로 선언한 경우에만 가능)
-		for (Product product : list) { 
-			System.out.println(product);
-		}
+		//for (Product product : list) { 
+		//	System.out.println(product);
+		//}
 		
 		
 	}

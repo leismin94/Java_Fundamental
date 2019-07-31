@@ -2,7 +2,7 @@ package java_20190719;
 
 public class CustomerDemo {
 	public static void main(String[] args) {
-		//Customer 객체 생성
+		//Customer 객체 생성 
 		//Customer => object type
 		//c1 => reference
 		//new Customer()

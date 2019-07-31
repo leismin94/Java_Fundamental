@@ -14,5 +14,6 @@ public class MemberDemo {
 		m.setSsn1("1234-13-22");
 		m.setSsn2("1234-13-22");
 		m.setAge(31);
+		System.out.println(m.getName());
 	}
 }

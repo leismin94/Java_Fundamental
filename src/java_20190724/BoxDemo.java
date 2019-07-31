@@ -2,7 +2,7 @@ package java_20190724;
 
 
 public class BoxDemo {
-	int a; // 인스턴스 변수 생성하고 static 메서드 에서 쓰고싶어 ? ->1.
+	int a; // 인스턴스 변수 생성하고 static 메서드 에서 쓰고싶어 ? ->11.
 	static int b;
 	public static void main(String[] args) { // args 실행시킬 때
 		b = 20; // static 변수 이기 때문에 사용가능

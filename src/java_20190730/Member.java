@@ -12,7 +12,7 @@ public class Member {
 	
 	@Override
 	public String toString() {
-		return "아이디 : " + id + ", 이름 =" + name + "]";
+		return "아이디 : " + id + ", 이름 =" + name + ".";
 	}
 
 	public String getId() {

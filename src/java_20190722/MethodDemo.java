@@ -4,7 +4,7 @@ public class MethodDemo {
 	// 7-11 라인까지 메서드를 정의
 	// boolean 메서드의 반환값
 	// instance 메서드
-	// int year -> aoroqustn(parameter)
+	// int year -> 매개변수(parameter)
 	public boolean isLeafYear(int year) {
 		// 메서드의 반환값이 boolean이기 때문에 return value의
 		// value도 boolean 이어야한다. / 6번줄이 boolean 이기에 return줄도 boolean 이어야함
