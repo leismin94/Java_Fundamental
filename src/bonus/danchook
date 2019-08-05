@@ -1,0 +1,19 @@
+단축키	설명
+ctrl + n	파일 새로 만들기
+ctrl + m	편집기 확장
+ctrl + alt + down arrow	한줄 복사후 아래로 붙혀넣기
+ctrl + d	한줄 지우기
+alt + down arrow or up arrow	한줄 위아래로 움직이기 
+ctrl + f11	실행
+ctrl + shift + f	자동으로 줄 맞춰주기
+ctrl + left arrow or right arrow	편집창 이동
+ctrl + /	한줄주석
+ctlr + shift + /	여러줄 주석
+ctrl + shift + l	단축키 보기
+crrl + shift + o 	console 호출
+alt + shift + s => c	디폴트 생성자(default constructor)
+alt + shift + s => o	매개변수 있는 생성자
+alt + shift + s => r => tap => enter => tap4 => enter	인스턴스 변수에 대한 setter, getter
+alt + shift + m	메서드 추출하기
+ctrl + f4	현재 편집창 닫기
+ctrl + shift + f4	모든 편집창 닫기
