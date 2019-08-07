@@ -31,29 +31,24 @@ public class ExcelDemo2 {
 		int rowIndex = 0;
 		HSSFWorkbook workbook = new HSSFWorkbook();// 새 엑셀파일 생성
 		HSSFSheet sheet1 = workbook.createSheet("새파일1");// 새 시트 생성
-		HSSFSheet sheet2 = workbook.createSheet("새파일2");// 새 시트 생성
+		// HSSFSheet sheet2 = workbook.createSheet("새파일2");// 새 시트 생성
 		try {
 			fr = new FileReader("c:\\dev\\test\\test1.txt");
 			br = new BufferedReader(fr);
 			while ((readLine = br.readLine()) != null) {
 				row1 = sheet1.createRow(rowIndex++);
-				// row2 = sheet2.createRow(rowIndex++);
 				String[] temp = readLine.split("#");
 				for (int i = 0; i < temp.length; i++) {
 					cell1 = row1.createCell(i);
 					cell1.setCellValue(temp[i]);
-					// cell2 = row2.createCell(i);
-					// cell2.setCellValue(temp[i]);
 				}
 			}
 			fos = new FileOutputStream("c:\\dev\\test\\test2.xls");
 			workbook.write(fos);
 			System.out.println("성공...");
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 
