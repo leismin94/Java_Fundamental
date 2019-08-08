@@ -1,3 +1,4 @@
+package Homework;
 
 public class MemberFindDto {
 	private int seq;
