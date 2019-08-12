@@ -7,6 +7,8 @@ public class MemberFindDto {
 	private String sdate;
 	private String edate;
 	
+	
+	
 	// 생성자 만들기
 	// 자동완성 기능을 쓰지않고
 	// sequence
